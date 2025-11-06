@@ -8,6 +8,7 @@ app.use(express.json());
 
 const OPENAI_API_KEY = process.env.OPENAI_API_KEY;
 
+// Chat endpoint
 app.post("/api/gpt-chat", async (req, res) => {
   const { message, conversation } = req.body;
 
